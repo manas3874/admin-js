@@ -28,6 +28,7 @@ body,form,input,option,select,textarea{
   justify-content:space-between
 }
 
+
 .Topbar_LeftMenu,.Topbar_LogoWrapper,.Topbar{
   display:flex;
   align-items:center
@@ -328,4 +329,15 @@ body,form,input,option,select,textarea{
   outline:none;
   cursor:pointer;
   margin-top:24px
+}
+
+
+.nav_menu{
+  display:flex;
+}
+
+.nav_menu li{
+  list-style-type: none;
+  margin-bottom: -.5rem;
+  margin-top: -.5rem;
 }
