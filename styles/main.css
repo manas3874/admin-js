@@ -298,7 +298,7 @@ body,form,input,option,select,textarea{
   box-shadow:0 0 6px #ccc
 }
 
-.LoginPage_LoginForm{
+.LoginPage_LoginForm h1{
   letter-spacing:1px;
   font-weight:500;
   margin:0 0 24px
