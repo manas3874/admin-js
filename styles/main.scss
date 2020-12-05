@@ -1,0 +1,33 @@
+// ! NAVBAR
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+  box-shadow: 2px 2px 7px 2px grey;
+  transform: scale(1.05) translateY(-12px);
+  .left-span {
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+    .logo {
+      color: rgb(108, 245, 149);
+    }
+    a {
+      margin-left: 2rem;
+      text-transform: none;
+      text-decoration: none;
+      color: black;
+      font-size: 1.1rem;
+    }
+  }
+  .right-span {
+    padding-right: 5rem;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.1rem;
+    }
+  }
+}

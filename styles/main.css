@@ -1,1 +1,49 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.4rem 0;
+  -webkit-box-shadow: 2px 2px 7px 2px grey;
+          box-shadow: 2px 2px 7px 2px grey;
+  -webkit-transform: scale(1.05) translateY(-12px);
+          transform: scale(1.05) translateY(-12px);
+}
+
+.navbar .left-span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 3rem;
+}
+
+.navbar .left-span .logo {
+  color: #6cf595;
+}
+
+.navbar .left-span a {
+  margin-left: 2rem;
+  text-transform: none;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.navbar .right-span {
+  padding-right: 5rem;
+}
+
+.navbar .right-span a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=main.css.map */
