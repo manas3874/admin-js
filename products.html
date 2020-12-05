@@ -18,76 +18,48 @@
         <a href="#">Logout</a>
       </div>
     </nav>
-    <div class="content">
-      <h1>PRODUCTS</h1>
-      <div class="main-section">
-        <div class="sidebar">
-          <h2>FILTERS</h2>
-          <h4>Count: <span class="count-data">100</span></h4>
-          <label for="expired"
-            ><input type="checkbox" name="expired" id="" /> expired</label
-          >
-          <label for="low stock"
-            ><input type="checkbox" name="low stock" id="" /> low stock</label
-          >
-        </div>
-        <div class="details-product">
-          <div class="column-names">
-            <h3>ID</h3>
-            <h3>Product Name</h3>
-            <h3>Product Brand</h3>
-            <h3>Expiry Date</h3>
-            <h3>Unit Price</h3>
-            <h3>stock</h3>
+    <main class="App_MainContainer__Fvvih">
+      <div class="ProductListingPage_PageWrapper__1hVLh">
+        <h1 class="ProductListingPage_MainHeading__2bwu7">Products</h1>
+        <div class="ProductListingPage_OrdersWrapper__17AIV">
+          <div class="ProductListingPage_FilterWrapper__s0fKS">
+            <h3>Filters</h3>
+            <div class="ProductListingPage_FilterOptions__2bq1J">
+              <p>Count: 100</p>
+              <label class="ProductListingPage_FilterCheckbox__wpWXC">
+                <input type="checkbox" name="product-expired" checked="">
+                Expired
+              </label>
+              <label class="ProductListingPage_FilterCheckbox__wpWXC">
+                <input type="checkbox" name="product-low-stock" checked="">
+                Low Stock
+              </label>
+            </div>
           </div>
-          <!-- ! first card -->
-          <div class="product-card card">
-            <div class="id"><p class="id-data">752-42-3160</p></div>
-            <div class="product-name">
-              <p class="product-name-data">Miconazole Nitrate</p>
-            </div>
-            <div class="product-brand">
-              <p class="product-brand-data">Premier Brands of America Inc.</p>
-            </div>
-            <div class="expiry-date">
-              <p class="expiry-date-data">14 Aug, 2012</p>
-            </div>
-            <div class="unit-price"><p class="unit-price-data">$993.01</p></div>
-            <div class="stock"><p class="stock-data">725</p></div>
-          </div>
-          <!-- ! second card -->
-          <div class="product-card card">
-            <div class="id"><p class="id-data">752-42-3160</p></div>
-            <div class="product-name">
-              <p class="product-name-data">Miconazole Nitrate</p>
-            </div>
-            <div class="product-brand">
-              <p class="product-brand-data">Premier Brands of America Inc.</p>
-            </div>
-            <div class="expiry-date">
-              <p class="expiry-date-data">14 Aug, 2012</p>
-            </div>
-            <div class="unit-price"><p class="unit-price-data">$993.01</p></div>
-            <div class="stock"><p class="stock-data">725</p></div>
-          </div>
-          <!-- ! third card -->
-          <div class="product-card card">
-            <div class="id"><p class="id-data">752-42-3160</p></div>
-            <div class="product-name">
-              <p class="product-name-data">Miconazole Nitrate</p>
-            </div>
-            <div class="product-brand">
-              <p class="product-brand-data">Premier Brands of America Inc.</p>
-            </div>
-            <div class="expiry-date">
-              <p class="expiry-date-data">14 Aug, 2012</p>
-            </div>
-            <div class="unit-price"><p class="unit-price-data">$993.01</p></div>
-            <div class="stock"><p class="stock-data">725</p></div>
+          <div style="width: 100%;">
+            <table class="ProductListingPage_OrderTable__2rKZc">
+              <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Product Brand</th>
+                <th style="min-width: 100px;">Expiry Date</th>
+                <th>Unit Price</th>
+                <th>Stock</th>
+              </tr>
+              <tbody>
+                <tr class="ProductListingPage_TableRow__2lrQY ProductListingPage_ExpiredRow__2p9Re">
+                  <td class="ProductListingPage_SecondaryText__31Bmu">56104-020</td>
+                  <td class="ProductListingPage_PrimaryText__3Y-hH">Miconazole Nitrate</td>
+                  <td class="ProductListingPage_SecondaryText__31Bmu">Premier Brands of America Inc.</td>
+                  <td class="ProductListingPage_PrimaryText__3Y-hH">14 Aug, 2012</td>
+                  <td class="ProductListingPage_SecondaryText__31Bmu">$993.01</td>
+                  <td class="ProductListingPage_SecondaryText__31Bmu">725</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
-    </div>
-  </body>
+    </main>
+               </body>
   <script src="./scripts/script.js"></script>
 </html>

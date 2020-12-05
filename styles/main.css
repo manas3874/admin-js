@@ -1,130 +1,338 @@
-a,
-p {
-  margin: 0;
-  padding: 0;
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale
 }
 
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.4rem 0;
-  -webkit-box-shadow: 2px 2px 7px 2px grey;
-          box-shadow: 2px 2px 7px 2px grey;
-  -webkit-transform: scale(1.05) translateY(-12px);
-          transform: scale(1.05) translateY(-12px);
+code{
+  font-family:source-code-pro,Menlo,Monaco,Consolas,"Courier New",monospace
 }
 
-.navbar .left-span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 3rem;
+body{
+  margin:0;
+  background-color:#f6f7fb
 }
 
-.navbar .left-span .logo {
-  color: #6cf595;
+body,form,input,option,select,textarea{
+  font-family:"Poppins",sans-serif
 }
 
-.navbar .left-span a {
-  margin-left: 2rem;
-  text-transform: none;
-  text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
+.App_MainContainer__Fvvih{
+  margin-top:100px
 }
 
-.navbar .right-span {
-  padding-right: 5rem;
+.Topbar_Topbar__2is_u{
+  width:100%;
+  padding:0 48px;
+  box-sizing:border-box;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:10;
+  box-shadow:0 2px 4px #ccc;
+  background-color:#fff;
+  justify-content:space-between
 }
 
-.navbar .right-span a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
+.Topbar_LeftMenu__3tQ_2,.Topbar_LogoWrapper__2hwwN,.Topbar_Topbar__2is_u{
+  display:flex;
+  align-items:center
+}
+.Topbar_LogoWrapper__2hwwN{
+  margin-right:36px
 }
 
-.content {
-  max-width: 90%;
-  margin: 0 auto;
+.Topbar_LogoWrapper__2hwwN img{
+  width:24px;
+  height:28px;
+  margin-right:8px
 }
 
-.content .main-section {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 6fr;
-      grid-template-columns: 1fr 6fr;
+.Topbar_BrandName__2xXd6{
+  font-size:24px;
+  letter-spacing:-1px;
+  font-weight:500;
+  margin:0;
+  color:rgba(0,0,0,.8)
 }
 
-.content .main-section * {
-  font-size: 1.3rem;
+.Topbar_MenuItem__3QSLp{
+  display:inline-block;
+  text-decoration:none;
+  color:rgba(0,0,0,.8);
+  padding:24px 0 16px;
+  font-size:14px;
+  font-weight:500;
+  letter-spacing:.6px;margin:0 10px
 }
 
-.content .main-section .sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.Topbar_MenuItem__3QSLp.Topbar_Active__uCUUs{
+  color:#20b883;
+  border-bottom:3px solid #20b883
 }
 
-.content .main-section .details .column-names {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1.5fr 1fr 1fr 0.5fr;
-      grid-template-columns: 1fr 1.5fr 1fr 1fr 0.5fr;
-  padding: 5px 10px;
+.Homepage_PageWrapper__35FDy{
+  width:100%;
+  box-sizing:border-box;
+  padding:0 8% 4%
 }
 
-.content .main-section .details .card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1.5fr 1fr 1fr 0.5fr;
-      grid-template-columns: 1fr 1.5fr 1fr 1fr 0.5fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 5px 0;
-  padding: 15px 10px;
-  border: 1px solid black;
+.Homepage_MainHeading__3eRiM{
+  margin:0
 }
 
-.content .main-section .details .card .date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.Homepage_OrdersWrapper__A-VhO{
+  width:100%;
+  display:flex;
+  align-items:flex-start;
+  padding:24px 0
 }
 
-.content .main-section .details-product .column-names {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 3fr 3fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 3fr 3fr 1fr 1fr 1fr;
-  padding: 5px 10px;
+.Homepage_FilterWrapper__2PcDK{
+  width:180px
+}
+  
+.Homepage_FilterWrapper__2PcDK h3{
+  margin:0
 }
 
-.content .main-section .details-product .card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 3fr 3fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 3fr 3fr 1fr 1fr 1fr;
-  margin: 5px 0;
-  padding: 15px 10px;
-  border: 1px solid black;
+.Homepage_FilterOptions__wNuP7{
+  display:flex;
+  flex-direction:column
 }
-/*# sourceMappingURL=main.css.map */
+
+.Homepage_FilterCheckbox__2-zv7{
+  margin:6px 0;
+  cursor:pointer
+}
+
+
+.Homepage_FilterCheckbox__2-zv7 input{
+  margin-right:12px
+}
+
+.Homepage_OrderTable__1DHO-{
+  width:100%;
+  border-collapse:collapse
+}
+
+.Homepage_OrderTable__1DHO- td,.Homepage_OrderTable__1DHO- th{
+  text-align:left;
+  padding:12px 24px;
+  font-size:14px
+}
+
+.Homepage_TableRow__cSO9_ td{
+  background-color:#fff;
+  border-bottom:4px solid #f6f7fb
+}
+
+.Homepage_PrimaryText__1PVTP{
+  color:rgba(0,0,0,.8);
+  font-weight:500
+}
+
+.Homepage_SecondaryText__1or5Q{
+  color:#8c8c8c
+}
+
+.ProductListingPage_PageWrapper__1hVLh{
+  width:100%;
+  box-sizing:border-box;
+  padding:0 8% 4%
+}
+
+.ProductListingPage_MainHeading__2bwu7{
+  margin:0
+}
+
+.ProductListingPage_OrdersWrapper__17AIV{
+  width:100%;
+  display:flex;
+  align-items:flex-start;
+  padding:24px 0
+}
+
+.ProductListingPage_FilterWrapper__s0fKS{
+  width:180px
+}
+
+.ProductListingPage_FilterWrapper__s0fKS h3{
+  margin:0
+}
+
+.ProductListingPage_FilterOptions__2bq1J{
+  display:flex;
+  flex-direction:column
+}
+
+.ProductListingPage_FilterCheckbox__wpWXC{
+  margin:6px 0;
+  cursor:pointer
+}
+
+.ProductListingPage_FilterCheckbox__wpWXC input{
+  margin-right:12px
+}
+
+.ProductListingPage_OrderTable__2rKZc{
+  width:100%;
+  border-collapse:collapse
+}
+
+.ProductListingPage_OrderTable__2rKZc td,.ProductListingPage_OrderTable__2rKZc th{
+  text-align:left;
+  padding:12px 24px;
+  font-size:14px
+}
+
+.ProductListingPage_TableRow__2lrQY td{
+  background-color:#fff;
+  border-bottom:4px solid #f6f7fb
+}
+
+.ProductListingPage_PrimaryText__3Y-hH{
+  color:rgba(0,0,0,.8);
+  font-weight:500
+}
+
+.ProductListingPage_SecondaryText__31Bmu{
+  color:#8c8c8c
+}
+
+.UserList_PageWrapper__11jYV{
+  width:100%;
+  box-sizing:border-box;
+  padding:0 8% 4%
+}
+
+.UserList_MainHeading__1Ntqz{
+  margin:0
+}
+
+.UserList_OrdersWrapper__8eEvi{
+  width:100%;
+  padding:24px 0
+}
+
+.UserList_FilterWrapper__39u8A{
+  width:700px;
+  display:flex;
+  align-items:center;
+  margin-bottom:48px
+}
+
+.UserList_FilterWrapper__39u8A h3{
+  margin:0
+}
+
+.UserList_FilterOptions__1bzC-{
+  display:flex;
+  flex-direction:column
+}
+
+.UserList_FilterCheckbox__1CI_8{
+  margin:6px 0;
+  cursor:pointer
+}
+
+.UserList_FilterCheckbox__1CI_8 input{
+  margin-right:12px
+}
+
+.UserList_OrderTable__1cnvQ{
+  width:100%;
+  border-collapse:collapse
+}
+
+.UserList_OrderTable__1cnvQ td,.UserList_OrderTable__1cnvQ th{
+  text-align:left;
+  padding:12px 24px;
+  font-size:14px
+}
+
+.UserList_TableRow__2DK3e td{
+  background-color:#fff;
+  border-bottom:4px solid #f6f7fb
+}
+
+.UserList_PrimaryText__38Hc_{
+  color:rgba(0,0,0,.8);
+  font-weight:500
+}
+
+.UserList_SecondaryText__3UV5v{
+  color:#8c8c8c
+}
+
+.UserList_SearchBox__BG9wr{
+  width:calc(100% - 100px);
+  padding:12px 24px;
+  font-size:15px;
+  border:0;
+  border-bottom:2px solid #8c8c8c;
+  margin:0 36px 0 0;
+  outline:none
+}
+
+
+.UserList_Button__1ygGK{
+  display:inline-block;
+  border-radius:30px;
+  padding:14px 36px;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:1px;
+  background-color:#20b883;
+  color:#fff;
+  border:none;
+  outline:none;
+  cursor:pointer
+}
+
+.LoginPage_LoginForm__3_wtJ{
+  width:100%;
+  max-width:500px;
+  border-radius:6px;
+  background-color:#fff;
+  margin:0 auto;
+  padding:32px;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  box-shadow:0 0 6px #ccc
+}
+
+.LoginPage_LoginForm__3_wtJ h1{
+  letter-spacing:1px;
+  font-weight:500;
+  margin:0 0 24px
+}
+
+.LoginPage_InputField__2lu1x{
+  width:100%;
+  padding-top:16px;
+  font-size:14px;
+  box-sizing:border-box;
+  border:0;
+  border-bottom:2px solid #8c8c8c;
+  margin-bottom:16px;
+  outline:none
+}
+
+.LoginPage_Button__qkLR7{
+  display:inline-block;
+  border-radius:30px;
+  padding:14px 36px;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:1px;
+  background-color:#20b883;
+  color:#fff;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  margin-top:24px
+}
