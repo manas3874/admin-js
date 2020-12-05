@@ -1,4 +1,5 @@
 // ! *******************************************************************************************************************
+
 // ! products page
 const trWrapper = document.getElementById("trWrapper");
 const productFilterCheckboxes = document.querySelectorAll(
@@ -209,6 +210,7 @@ for (let item of arr) {
   });
 }
 // ! *******************************************************************************************************************
+
 // ! users page
 const usersCard = document.querySelector(".UserList_TableRow");
 const searchInput = document.querySelector(".UserList_SearchBox");
@@ -235,6 +237,10 @@ usersRenderer("");
 window.addEventListener("keyup", (ev) => {
   ev.preventDefault();
   if (ev.keyCode == 13) {
-    usersRenderer(searchInput.value);
+    if (searchInput.value.toString().length > 1) {
+      usersRenderer(searchInput.value);
+    } else {
+      alert("Please input 2 or more characters");
+    }
   }
 });
