@@ -225,7 +225,7 @@ usersRenderer = (searchString) => {
       var newHtml;
       usersCard.innerHTML = "";
       data.map((item) => {
-        if (item.fullName.toString().includes(searchString)) {
+        if (item.fullName.toString().toLowerCase().includes(searchString.toLowerCase())) {
           newHtml = `<tr class="UserList_TableRow"><td class="UserList_SecondaryText">${item.id}</td><td class="UserList_PrimaryText"><img src=${item.profilePic} alt="Profile Pic"></td><td class="UserList_SecondaryText">${item.fullName}</td><td class="UserList_PrimaryText">${item.dob}</td><td class="UserList_SecondaryText__3UV5v">${item.gender}</td><td class="UserList_SecondaryText">${item.currentCity}, ${item.currentCountry}</td></tr>`;
           usersCard.insertAdjacentHTML("beforeend", newHtml);
         }
