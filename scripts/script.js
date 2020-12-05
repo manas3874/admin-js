@@ -33,7 +33,7 @@ const productsRenderer = (activeProductFilters) => {
         // ! only lowstock checked
         if (
           "LowStock" in activeProductFilters &&
-          item.stock < 200 &&
+          item.stock < 100 &&
           !("Expired" in activeProductFilters)
         ) {
           counter++;
@@ -77,6 +77,7 @@ const productsRenderer = (activeProductFilters) => {
             }
           }
         } else if (
+          // ! both checked
           "Expired" in activeProductFilters &&
           "LowStock" in activeProductFilters
         ) {
@@ -85,7 +86,7 @@ const productsRenderer = (activeProductFilters) => {
           var nowArr = now.toDateString().split(" ");
           // console.log(dateArr, nowArr);
           if (nowArr[3] > dateArr[2]) {
-            if (item.stock < 200) {
+            if (item.stock < 100) {
               counter++;
               newHtml = `<tr class="ProductListingPage_TableRow ProductListingPage_ExpiredRow" id="trWrapper"><td class="ProductListingPage_SecondaryText" id="text1">${item.id}</td><td class="ProductListingPage_PrimaryText" id="text2">${item.medicineName}</td><td class="ProductListingPage_SecondaryText" id="text3">${item.medicineBrand}</td><td class="ProductListingPage_PrimaryText" id="text4">${item.expiryDate}</td><td class="ProductListingPage_SecondaryText" id="text5">$${item.unitPrice}</td><td class="ProductListingPage_SecondaryText" id="text6">${item.stock}</td></tr>`;
               trWrapper.insertAdjacentHTML("beforeend", newHtml);
@@ -96,7 +97,7 @@ const productsRenderer = (activeProductFilters) => {
               arrayOfMonths.indexOf(nowArr[1]) >
               arrayOfMonths.indexOf(dateArr[1])
             ) {
-              if (item.stock < 200) {
+              if (item.stock < 100) {
                 counter++;
                 newHtml = `<tr class="ProductListingPage_TableRow ProductListingPage_ExpiredRow" id="trWrapper"><td class="ProductListingPage_SecondaryText" id="text1">${item.id}</td><td class="ProductListingPage_PrimaryText" id="text2">${item.medicineName}</td><td class="ProductListingPage_SecondaryText" id="text3">${item.medicineBrand}</td><td class="ProductListingPage_PrimaryText" id="text4">${item.expiryDate}</td><td class="ProductListingPage_SecondaryText" id="text5">$${item.unitPrice}</td><td class="ProductListingPage_SecondaryText" id="text6">${item.stock}</td></tr>`;
                 trWrapper.insertAdjacentHTML("beforeend", newHtml);
@@ -109,7 +110,7 @@ const productsRenderer = (activeProductFilters) => {
               arrayOfMonths.indexOf(dateArr[1])
           ) {
             if (nowArr[2] > dateArr[0]) {
-              if (item.stock < 200) {
+              if (item.stock < 100) {
                 counter++;
                 newHtml = `<tr class="ProductListingPage_TableRow ProductListingPage_ExpiredRow" id="trWrapper"><td class="ProductListingPage_SecondaryText" id="text1">${item.id}</td><td class="ProductListingPage_PrimaryText" id="text2">${item.medicineName}</td><td class="ProductListingPage_SecondaryText" id="text3">${item.medicineBrand}</td><td class="ProductListingPage_PrimaryText" id="text4">${item.expiryDate}</td><td class="ProductListingPage_SecondaryText" id="text5">$${item.unitPrice}</td><td class="ProductListingPage_SecondaryText" id="text6">${item.stock}</td></tr>`;
                 trWrapper.insertAdjacentHTML("beforeend", newHtml);
@@ -117,6 +118,15 @@ const productsRenderer = (activeProductFilters) => {
               }
             }
           }
+        } else if (
+          // ! both unchecked
+          !("Expired" in activeProductFilters) &&
+          !("LowStock" in activeProductFilters)
+        ) {
+          counter++;
+          newHtml = `<tr class="ProductListingPage_TableRow ProductListingPage_ExpiredRow" id="trWrapper"><td class="ProductListingPage_SecondaryText" id="text1">${item.id}</td><td class="ProductListingPage_PrimaryText" id="text2">${item.medicineName}</td><td class="ProductListingPage_SecondaryText" id="text3">${item.medicineBrand}</td><td class="ProductListingPage_PrimaryText" id="text4">${item.expiryDate}</td><td class="ProductListingPage_SecondaryText" id="text5">$${item.unitPrice}</td><td class="ProductListingPage_SecondaryText" id="text6">${item.stock}</td></tr>`;
+          trWrapper.insertAdjacentHTML("beforeend", newHtml);
+          productCounter.innerHTML = counter;
         }
       });
     }
@@ -203,6 +213,9 @@ for (let item of arr) {
 const usersCard = document.querySelector(".UserList_TableRow");
 const searchInput = document.querySelector(".UserList_SearchBox");
 const searchButton = document.querySelector(".UserList_Button");
+searchButton.addEventListener("click", () => {
+  searchInput.value = "";
+});
 usersRenderer = (searchString) => {
   $.get(
     "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users",
