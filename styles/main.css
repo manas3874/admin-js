@@ -1,14 +1,6 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
 
-body{
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale
-}
-
-code{
-  font-family:source-code-pro,Menlo,Monaco,Consolas,"Courier New",monospace
-}
 
 body{
   margin:0;
@@ -19,11 +11,11 @@ body,form,input,option,select,textarea{
   font-family:"Poppins",sans-serif
 }
 
-.App_MainContainer__Fvvih{
+.MainContainer{
   margin-top:100px
 }
 
-.Topbar_Topbar__2is_u{
+.Topbar{
   width:100%;
   padding:0 48px;
   box-sizing:border-box;
@@ -36,21 +28,21 @@ body,form,input,option,select,textarea{
   justify-content:space-between
 }
 
-.Topbar_LeftMenu__3tQ_2,.Topbar_LogoWrapper__2hwwN,.Topbar_Topbar__2is_u{
+.Topbar_LeftMenu,.Topbar_LogoWrapper,.Topbar{
   display:flex;
   align-items:center
 }
-.Topbar_LogoWrapper__2hwwN{
+.Topbar_LogoWrapper{
   margin-right:36px
 }
 
-.Topbar_LogoWrapper__2hwwN img{
+.Topbar_LogoWrapper img{
   width:24px;
   height:28px;
   margin-right:8px
 }
 
-.Topbar_BrandName__2xXd6{
+.Topbar_BrandName{
   font-size:24px;
   letter-spacing:-1px;
   font-weight:500;
@@ -58,7 +50,7 @@ body,form,input,option,select,textarea{
   color:rgba(0,0,0,.8)
 }
 
-.Topbar_MenuItem__3QSLp{
+.Topbar_MenuItem{
   display:inline-block;
   text-decoration:none;
   color:rgba(0,0,0,.8);
@@ -68,207 +60,207 @@ body,form,input,option,select,textarea{
   letter-spacing:.6px;margin:0 10px
 }
 
-.Topbar_MenuItem__3QSLp.Topbar_Active__uCUUs{
+.Topbar_MenuItem.Topbar_Active{
   color:#20b883;
   border-bottom:3px solid #20b883
 }
 
-.Homepage_PageWrapper__35FDy{
+.Homepage_PageWrapper{
   width:100%;
   box-sizing:border-box;
   padding:0 8% 4%
 }
 
-.Homepage_MainHeading__3eRiM{
+.Homepage_MainHeading{
   margin:0
 }
 
-.Homepage_OrdersWrapper__A-VhO{
+.Homepage_OrdersWrapper{
   width:100%;
   display:flex;
   align-items:flex-start;
   padding:24px 0
 }
 
-.Homepage_FilterWrapper__2PcDK{
+.Homepage_FilterWrapper{
   width:180px
 }
   
-.Homepage_FilterWrapper__2PcDK h3{
+.Homepage_FilterWrapper h3{
   margin:0
 }
 
-.Homepage_FilterOptions__wNuP7{
+.Homepage_FilterOptions{
   display:flex;
   flex-direction:column
 }
 
-.Homepage_FilterCheckbox__2-zv7{
+.Homepage_FilterCheckbox{
   margin:6px 0;
   cursor:pointer
 }
 
 
-.Homepage_FilterCheckbox__2-zv7 input{
+.Homepage_FilterCheckbox input{
   margin-right:12px
 }
 
-.Homepage_OrderTable__1DHO-{
+.Homepage_OrderTable{
   width:100%;
   border-collapse:collapse
 }
 
-.Homepage_OrderTable__1DHO- td,.Homepage_OrderTable__1DHO- th{
+.Homepage_OrderTable td,.Homepage_OrderTable th{
   text-align:left;
   padding:12px 24px;
   font-size:14px
 }
 
-.Homepage_TableRow__cSO9_ td{
+.Homepage_TableRow{
   background-color:#fff;
   border-bottom:4px solid #f6f7fb
 }
 
-.Homepage_PrimaryText__1PVTP{
+.Homepage_PrimaryText{
   color:rgba(0,0,0,.8);
   font-weight:500
 }
 
-.Homepage_SecondaryText__1or5Q{
+.Homepage_SecondaryText{
   color:#8c8c8c
 }
 
-.ProductListingPage_PageWrapper__1hVLh{
+.ProductListingPage_PageWrapper{
   width:100%;
   box-sizing:border-box;
   padding:0 8% 4%
 }
 
-.ProductListingPage_MainHeading__2bwu7{
+.ProductListingPage_MainHeading{
   margin:0
 }
 
-.ProductListingPage_OrdersWrapper__17AIV{
+.ProductListingPage_OrdersWrapper{
   width:100%;
   display:flex;
   align-items:flex-start;
   padding:24px 0
 }
 
-.ProductListingPage_FilterWrapper__s0fKS{
+.ProductListingPage_FilterWrapper{
   width:180px
 }
 
-.ProductListingPage_FilterWrapper__s0fKS h3{
+.ProductListingPage_FilterWrapper{
   margin:0
 }
 
-.ProductListingPage_FilterOptions__2bq1J{
+.ProductListingPage_FilterOptions{
   display:flex;
   flex-direction:column
 }
 
-.ProductListingPage_FilterCheckbox__wpWXC{
+.ProductListingPage_FilterCheckbox{
   margin:6px 0;
   cursor:pointer
 }
 
-.ProductListingPage_FilterCheckbox__wpWXC input{
+.ProductListingPage_FilterCheckbox input{
   margin-right:12px
 }
 
-.ProductListingPage_OrderTable__2rKZc{
+.ProductListingPage_OrderTable{
   width:100%;
   border-collapse:collapse
 }
 
-.ProductListingPage_OrderTable__2rKZc td,.ProductListingPage_OrderTable__2rKZc th{
+.ProductListingPage_OrderTable td,.ProductListingPage_OrderTable th{
   text-align:left;
   padding:12px 24px;
   font-size:14px
 }
 
-.ProductListingPage_TableRow__2lrQY td{
+.ProductListingPage_TableRow td{
   background-color:#fff;
   border-bottom:4px solid #f6f7fb
 }
 
-.ProductListingPage_PrimaryText__3Y-hH{
+.ProductListingPage_PrimaryText{
   color:rgba(0,0,0,.8);
   font-weight:500
 }
 
-.ProductListingPage_SecondaryText__31Bmu{
+.ProductListingPage_SecondaryText{
   color:#8c8c8c
 }
 
-.UserList_PageWrapper__11jYV{
+.UserList_PageWrapper{
   width:100%;
   box-sizing:border-box;
   padding:0 8% 4%;
   margin-top:6.5rem;
 }
 
-.UserList_MainHeading__1Ntqz{
+.UserList_MainHeading{
   margin:0
 }
 
-.UserList_OrdersWrapper__8eEvi{
+.UserList_OrdersWrapper{
   width:100%;
   padding:24px 0
 }
 
-.UserList_FilterWrapper__39u8A{
+.UserList_FilterWrapper{
   width:700px;
   display:flex;
   align-items:center;
   margin-bottom:48px
 }
 
-.UserList_FilterWrapper__39u8A h3{
+.UserList_FilterWrapper h3{
   margin:0
 }
 
-.UserList_FilterOptions__1bzC-{
+.UserList_FilterOptions{
   display:flex;
   flex-direction:column
 }
 
-.UserList_FilterCheckbox__1CI_8{
+.UserList_FilterCheckbox{
   margin:6px 0;
   cursor:pointer
 }
 
-.UserList_FilterCheckbox__1CI_8 input{
+.UserList_FilterCheckbox input{
   margin-right:12px
 }
 
-.UserList_OrderTable__1cnvQ{
+.UserList_OrderTable{
   width:100%;
   border-collapse:collapse
 }
 
-.UserList_OrderTable__1cnvQ td,.UserList_OrderTable__1cnvQ th{
+.UserList_OrderTable td,.UserList_OrderTable th{
   text-align:left;
   padding:12px 24px;
   font-size:14px
 }
 
-.UserList_TableRow__2DK3e td{
+.UserList_TableRow td{
   background-color:#fff;
   border-bottom:4px solid #f6f7fb
 }
 
-.UserList_PrimaryText__38Hc_{
+.UserList_PrimaryText{
   color:rgba(0,0,0,.8);
   font-weight:500
 }
 
-.UserList_SecondaryText__3UV5v{
+.UserList_SecondaryText{
   color:#8c8c8c
 }
 
-.UserList_SearchBox__BG9wr{
+.UserList_SearchBox{
   width:calc(100% - 100px);
   padding:12px 24px;
   font-size:15px;
@@ -279,7 +271,7 @@ body,form,input,option,select,textarea{
 }
 
 
-.UserList_Button__1ygGK{
+.UserList_Button{
   display:inline-block;
   border-radius:30px;
   padding:14px 36px;
@@ -293,7 +285,7 @@ body,form,input,option,select,textarea{
   cursor:pointer
 }
 
-.LoginPage_LoginForm__3_wtJ{
+.LoginPage_LoginForm{
   width:100%;
   max-width:500px;
   border-radius:6px;
@@ -306,13 +298,13 @@ body,form,input,option,select,textarea{
   box-shadow:0 0 6px #ccc
 }
 
-.LoginPage_LoginForm__3_wtJ h1{
+.LoginPage_LoginForm{
   letter-spacing:1px;
   font-weight:500;
   margin:0 0 24px
 }
 
-.LoginPage_InputField__2lu1x{
+.LoginPage_InputField{
   width:100%;
   padding-top:16px;
   font-size:14px;
@@ -323,7 +315,7 @@ body,form,input,option,select,textarea{
   outline:none
 }
 
-.LoginPage_Button__qkLR7{
+.LoginPage_Button{
   display:inline-block;
   border-radius:30px;
   padding:14px 36px;

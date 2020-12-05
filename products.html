@@ -4,43 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <title>Assessment</title>
   </head>
   <body>
-    <div class="Topbar_Topbar__2is_u">
-      <div class="Topbar_LeftMenu__3tQ_2">
-        <div class="Topbar_LogoWrapper__2hwwN">
+    <div class="Topbar">
+      <div class="Topbar_LeftMenu">
+        <div class="Topbar_LogoWrapper">
           <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
-          <p class="Topbar_BrandName__2xXd6">Kafene</p>
+          <p class="Topbar_BrandName">Kafene</p>
         </div>
         <nav>
-          <a class="Topbar_MenuItem__3QSLp Topbar_Active__uCUUs" href="./orders.html">Orders</a>
-          <a class="Topbar_MenuItem__3QSLp " href="./products.html">Products</a>
-          <a class="Topbar_MenuItem__3QSLp " href="./users.html">Users</a>
+          <a class="Topbar_MenuItem Topbar_Active" href="./orders.html">Orders</a>
+          <a class="Topbar_MenuItem" href="./products.html">Products</a>
+          <a class="Topbar_MenuItem" href="./users.html">Users</a>
         </nav>
       </div>
-      <a class="Topbar_MenuItem__3QSLp" href="">Logout</a>
+      <a class="Topbar_MenuItem" href="">Logout</a>
     </div>
-    <main class="App_MainContainer__Fvvih">
-      <div class="ProductListingPage_PageWrapper__1hVLh">
-        <h1 class="ProductListingPage_MainHeading__2bwu7">Products</h1>
-        <div class="ProductListingPage_OrdersWrapper__17AIV">
-          <div class="ProductListingPage_FilterWrapper__s0fKS">
+    <main class="MainContainer">
+      <div class="ProductListingPage_PageWrapper">
+        <h1 class="ProductListingPage_MainHeading">Products</h1>
+        <div class="ProductListingPage_OrdersWrapper">
+          <div class="ProductListingPage_FilterWrapper">
             <h3>Filters</h3>
-            <div class="ProductListingPage_FilterOptions__2bq1J">
+            <div class="ProductListingPage_FilterOptions">
               <p>Count: 100</p>
-              <label class="ProductListingPage_FilterCheckbox__wpWXC">
+              <label class="ProductListingPage_FilterCheckbox">
                 <input type="checkbox" name="product-expired" checked="">
                 Expired
               </label>
-              <label class="ProductListingPage_FilterCheckbox__wpWXC">
+              <label class="ProductListingPage_FilterCheckbox">
                 <input type="checkbox" name="product-low-stock" checked="">
                 Low Stock
               </label>
             </div>
           </div>
           <div style="width: 100%;">
-            <table class="ProductListingPage_OrderTable__2rKZc">
+            <table class="ProductListingPage_OrderTable">
               <tr>
                 <th>ID</th>
                 <th>Product Name</th>
@@ -50,13 +51,13 @@
                 <th>Stock</th>
               </tr>
               <tbody>
-                <tr class="ProductListingPage_TableRow__2lrQY ProductListingPage_ExpiredRow__2p9Re">
-                  <td class="ProductListingPage_SecondaryText__31Bmu">56104-020</td>
-                  <td class="ProductListingPage_PrimaryText__3Y-hH">Miconazole Nitrate</td>
-                  <td class="ProductListingPage_SecondaryText__31Bmu">Premier Brands of America Inc.</td>
-                  <td class="ProductListingPage_PrimaryText__3Y-hH">14 Aug, 2012</td>
-                  <td class="ProductListingPage_SecondaryText__31Bmu">$993.01</td>
-                  <td class="ProductListingPage_SecondaryText__31Bmu">725</td></tr>
+                <tr class="ProductListingPage_TableRow ProductListingPage_ExpiredRow">
+                  <td class="ProductListingPage_SecondaryText">56104-020</td>
+                  <td class="ProductListingPage_PrimaryText">Miconazole Nitrate</td>
+                  <td class="ProductListingPage_SecondaryText">Premier Brands of America Inc.</td>
+                  <td class="ProductListingPage_PrimaryText"></td>14 Aug, 2012</td>
+                  <td class="ProductListingPage_SecondaryText">$993.01</td>
+                  <td class="ProductListingPage_SecondaryText">725</td></tr>
               </tbody>
             </table>
           </div>
