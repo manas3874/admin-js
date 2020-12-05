@@ -55,17 +55,6 @@ for (let item of arr) {
   });
 }
 
-// $.get(
-//   "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/orders",
-//   function (data, status) {
-//     var newHtml;
-//     data.map((item) => {
-//       newHtml = `<tr class="Homepage_TableRow"><td class="Homepage_SecondaryText">${item.id}</td><td class="Homepage_PrimaryText">${item.customerName}</td><td class="Homepage_PrimaryText">${item.orderDate}<br /><span class="Homepage_SecondaryText">${item.orderTime}</span></td><td class="Homepage_SecondaryText">$${item.amount}</td><td class="Homepage_PrimaryText">${item.orderStatus}</td></tr>`;
-//       ordersCard.insertAdjacentHTML("beforeend", newHtml);
-//     });
-//   }
-// );
-
 // ! users page
 const usersCard = document.querySelector(".UserList_TableRow");
 $.get(
