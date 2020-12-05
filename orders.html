@@ -7,86 +7,69 @@
     <title>Assessment</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="left-span">
-        <div class="logo"><h2>Kafene</h2></div>
-        <a href="./orders.html">Orders</a>
-        <a href="./products.html">Products</a>
-        <a href="./users.html">Users</a>
-      </div>
-      <div class="right-span">
-        <a href="#">Logout</a>
-      </div>
-    </nav>
-    <div class="content">
-      <h1>ORDERS</h1>
-      <div class="main-section">
-        <div class="sidebar">
-          <h2>FILTERS</h2>
-          <h4>Count: <span class="count-data">100</span></h4>
-          <label for="new"
-            ><input type="checkbox" name="new" id="" /> New</label
-          >
-          <label for="packed"
-            ><input type="checkbox" name="packed" id="" /> Packed</label
-          >
-          <label for="InTransit"
-            ><input type="checkbox" name="InTransit" id="" /> InTransit</label
-          >
-          <label for="Delivered"
-            ><input type="checkbox" name="Delivered" id="" /> Delivered</label
-          >
+    <div class="Topbar_Topbar__2is_u">
+      <div class="Topbar_LeftMenu__3tQ_2">
+        <div class="Topbar_LogoWrapper__2hwwN">
+          <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+          <p class="Topbar_BrandName__2xXd6">Kafene</p>
         </div>
-        <div class="details">
-          <div class="column-names">
-            <h3>ID</h3>
-            <h3>Customer</h3>
-            <h3>Date</h3>
-            <h3>Amount</h3>
-            <h3>Status</h3>
+        <nav>
+          <a class="Topbar_MenuItem__3QSLp Topbar_Active__uCUUs" href="./orders.html">Orders</a>
+          <a class="Topbar_MenuItem__3QSLp " href="./products.html">Products</a>
+          <a class="Topbar_MenuItem__3QSLp " href="./users.html">Users</a>
+        </nav>
+      </div>
+      <a class="Topbar_MenuItem__3QSLp" href="">Logout</a>
+    </div>
+    <main class="App_MainContainer__Fvvih"><div class="Homepage_PageWrapper__35FDy">
+      <h1 class="Homepage_MainHeading__3eRiM">Orders</h1>
+      <div class="Homepage_OrdersWrapper__A-VhO">
+        <div class="Homepage_FilterWrapper__2PcDK"><h3>Filters</h3>
+          <div class="Homepage_FilterOptions__wNuP7">
+            <p>Count: 100</p>
+            <label class="Homepage_FilterCheckbox__2-zv7">
+              <input type="checkbox" name="orders-new" checked="">
+              New
+            </label>
+            <label class="Homepage_FilterCheckbox__2-zv7">
+              <input type="checkbox" name="orders-packed" checked="">
+              Packed
+            </label>
+            <label class="Homepage_FilterCheckbox__2-zv7">
+              <input type="checkbox" name="orders-transit" checked="">
+              InTransit
+            </label>
+            <label class="Homepage_FilterCheckbox__2-zv7">
+              <input type="checkbox" name="orders-delivered" checked="">
+              Delivered
+            </label>
           </div>
-          <!-- ! first card -->
-          <div class="order-card card">
-            <div class="id"><p class="id-data">752-42-3160</p></div>
-            <div class="customer">
-              <p class="customer-data">Emmery Grizard</p>
-            </div>
-            <div class="date">
-              <p class="date-data">11 Mar, 2020</p>
-              <p class="time-data">3:14 PM</p>
-            </div>
-            <div class="amount"><p class="amount-data">$518.23</p></div>
-            <div class="status"><p class="status-data">New</p></div>
-          </div>
-          <!-- ! second card -->
-          <div class="order-card card">
-            <div class="id"><p class="id-data">752-42-3160</p></div>
-            <div class="customer">
-              <p class="customer-data">Emmery Grizard</p>
-            </div>
-            <div class="date">
-              <p class="date-data">11 Mar, 2020</p>
-              <p class="time-data">3:14 PM</p>
-            </div>
-            <div class="amount"><p class="amount-data">$518.23</p></div>
-            <div class="status"><p class="status-data">New</p></div>
-          </div>
-          <!-- ! third card -->
-          <div class="order-card card">
-            <div class="id"><p class="id-data">752-42-3160</p></div>
-            <div class="customer">
-              <p class="customer-data">Emmery Grizard</p>
-            </div>
-            <div class="date">
-              <p class="date-data">11 Mar, 2020</p>
-              <p class="time-data">3:14 PM</p>
-            </div>
-            <div class="amount"><p class="amount-data">$518.23</p></div>
-            <div class="status"><p class="status-data">New</p></div>
-          </div>
+        </div>
+        <div style="width: 100%;">
+          <table class="Homepage_OrderTable__1DHO-">
+            <tr>
+              <th>ID</th>
+              <th>Customer</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Status</th>
+            </tr>
+            <tbody>
+              <tr class="Homepage_TableRow__cSO9_">
+                <td class="Homepage_SecondaryText__1or5Q">714-69-5617</td>
+                <td class="Homepage_PrimaryText__1PVTP">Sally Whebell</td>
+                <td class="Homepage_PrimaryText__1PVTP">07 Aug, 2020 <br>
+                  <span class="Homepage_SecondaryText__1or5Q">2:29 AM</span>
+                </td>
+                <td class="Homepage_SecondaryText__1or5Q">$634.2</td>
+                <td class="Homepage_PrimaryText__1PVTP">Delivered</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
+  </main>
   </body>
   <script src="./scripts/script.js"></script>
 </html>
