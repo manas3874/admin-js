@@ -1,130 +1,331 @@
-a,
-p {
-  margin: 0;
-  padding: 0;
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+
+
+body{
+  margin:0;
+  background-color:#f6f7fb
 }
 
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.4rem 0;
-  -webkit-box-shadow: 2px 2px 7px 2px grey;
-          box-shadow: 2px 2px 7px 2px grey;
-  -webkit-transform: scale(1.05) translateY(-12px);
-          transform: scale(1.05) translateY(-12px);
+body,form,input,option,select,textarea{
+  font-family:"Poppins",sans-serif
 }
 
-.navbar .left-span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 3rem;
+.MainContainer{
+  margin-top:100px
 }
 
-.navbar .left-span .logo {
-  color: #6cf595;
+.Topbar{
+  width:100%;
+  padding:0 48px;
+  box-sizing:border-box;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:10;
+  box-shadow:0 2px 4px #ccc;
+  background-color:#fff;
+  justify-content:space-between
 }
 
-.navbar .left-span a {
-  margin-left: 2rem;
-  text-transform: none;
-  text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
+.Topbar_LeftMenu,.Topbar_LogoWrapper,.Topbar{
+  display:flex;
+  align-items:center
+}
+.Topbar_LogoWrapper{
+  margin-right:36px
 }
 
-.navbar .right-span {
-  padding-right: 5rem;
+.Topbar_LogoWrapper img{
+  width:24px;
+  height:28px;
+  margin-right:8px
 }
 
-.navbar .right-span a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
+.Topbar_BrandName{
+  font-size:24px;
+  letter-spacing:-1px;
+  font-weight:500;
+  margin:0;
+  color:rgba(0,0,0,.8)
 }
 
-.content {
-  max-width: 90%;
-  margin: 0 auto;
+.Topbar_MenuItem{
+  display:inline-block;
+  text-decoration:none;
+  color:rgba(0,0,0,.8);
+  padding:24px 0 16px;
+  font-size:14px;
+  font-weight:500;
+  letter-spacing:.6px;margin:0 10px
 }
 
-.content .main-section {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 6fr;
-      grid-template-columns: 1fr 6fr;
+.Topbar_MenuItem.Topbar_Active{
+  color:#20b883;
+  border-bottom:3px solid #20b883
 }
 
-.content .main-section * {
-  font-size: 1.3rem;
+.Homepage_PageWrapper{
+  width:100%;
+  box-sizing:border-box;
+  padding:0 8% 4%
 }
 
-.content .main-section .sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.Homepage_MainHeading{
+  margin:0
 }
 
-.content .main-section .details .column-names {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1.5fr 1fr 1fr 0.5fr;
-      grid-template-columns: 1fr 1.5fr 1fr 1fr 0.5fr;
-  padding: 5px 10px;
+.Homepage_OrdersWrapper{
+  width:100%;
+  display:flex;
+  align-items:flex-start;
+  padding:24px 0
 }
 
-.content .main-section .details .card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1.5fr 1fr 1fr 0.5fr;
-      grid-template-columns: 1fr 1.5fr 1fr 1fr 0.5fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 5px 0;
-  padding: 15px 10px;
-  border: 1px solid black;
+.Homepage_FilterWrapper{
+  width:180px
+}
+  
+.Homepage_FilterWrapper h3{
+  margin:0
 }
 
-.content .main-section .details .card .date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.Homepage_FilterOptions{
+  display:flex;
+  flex-direction:column
 }
 
-.content .main-section .details-product .column-names {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 3fr 3fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 3fr 3fr 1fr 1fr 1fr;
-  padding: 5px 10px;
+.Homepage_FilterCheckbox{
+  margin:6px 0;
+  cursor:pointer
 }
 
-.content .main-section .details-product .card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 3fr 3fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 3fr 3fr 1fr 1fr 1fr;
-  margin: 5px 0;
-  padding: 15px 10px;
-  border: 1px solid black;
+
+.Homepage_FilterCheckbox input{
+  margin-right:12px
 }
-/*# sourceMappingURL=main.css.map */
+
+.Homepage_OrderTable{
+  width:100%;
+  border-collapse:collapse
+}
+
+.Homepage_OrderTable td,.Homepage_OrderTable th{
+  text-align:left;
+  padding:12px 24px;
+  font-size:14px
+}
+
+.Homepage_TableRow{
+  background-color:#fff;
+  border-bottom:4px solid #f6f7fb
+}
+
+.Homepage_PrimaryText{
+  color:rgba(0,0,0,.8);
+  font-weight:500
+}
+
+.Homepage_SecondaryText{
+  color:#8c8c8c
+}
+
+.ProductListingPage_PageWrapper{
+  width:100%;
+  box-sizing:border-box;
+  padding:0 8% 4%
+}
+
+.ProductListingPage_MainHeading{
+  margin:0
+}
+
+.ProductListingPage_OrdersWrapper{
+  width:100%;
+  display:flex;
+  align-items:flex-start;
+  padding:24px 0
+}
+
+.ProductListingPage_FilterWrapper{
+  width:180px
+}
+
+.ProductListingPage_FilterWrapper{
+  margin:0
+}
+
+.ProductListingPage_FilterOptions{
+  display:flex;
+  flex-direction:column
+}
+
+.ProductListingPage_FilterCheckbox{
+  margin:6px 0;
+  cursor:pointer
+}
+
+.ProductListingPage_FilterCheckbox input{
+  margin-right:12px
+}
+
+.ProductListingPage_OrderTable{
+  width:100%;
+  border-collapse:collapse
+}
+
+.ProductListingPage_OrderTable td,.ProductListingPage_OrderTable th{
+  text-align:left;
+  padding:12px 24px;
+  font-size:14px
+}
+
+.ProductListingPage_TableRow td{
+  background-color:#fff;
+  border-bottom:4px solid #f6f7fb
+}
+
+.ProductListingPage_PrimaryText{
+  color:rgba(0,0,0,.8);
+  font-weight:500
+}
+
+.ProductListingPage_SecondaryText{
+  color:#8c8c8c
+}
+
+.UserList_PageWrapper{
+  width:100%;
+  box-sizing:border-box;
+  padding:0 8% 4%;
+  margin-top:6.5rem;
+}
+
+.UserList_MainHeading{
+  margin:0
+}
+
+.UserList_OrdersWrapper{
+  width:100%;
+  padding:24px 0
+}
+
+.UserList_FilterWrapper{
+  width:700px;
+  display:flex;
+  align-items:center;
+  margin-bottom:48px
+}
+
+.UserList_FilterWrapper h3{
+  margin:0
+}
+
+.UserList_FilterOptions{
+  display:flex;
+  flex-direction:column
+}
+
+.UserList_FilterCheckbox{
+  margin:6px 0;
+  cursor:pointer
+}
+
+.UserList_FilterCheckbox input{
+  margin-right:12px
+}
+
+.UserList_OrderTable{
+  width:100%;
+  border-collapse:collapse
+}
+
+.UserList_OrderTable td,.UserList_OrderTable th{
+  text-align:left;
+  padding:12px 24px;
+  font-size:14px
+}
+
+.UserList_TableRow td{
+  background-color:#fff;
+  border-bottom:4px solid #f6f7fb
+}
+
+.UserList_PrimaryText{
+  color:rgba(0,0,0,.8);
+  font-weight:500
+}
+
+.UserList_SecondaryText{
+  color:#8c8c8c
+}
+
+.UserList_SearchBox{
+  width:calc(100% - 100px);
+  padding:12px 24px;
+  font-size:15px;
+  border:0;
+  border-bottom:2px solid #8c8c8c;
+  margin:0 36px 0 0;
+  outline:none
+}
+
+
+.UserList_Button{
+  display:inline-block;
+  border-radius:30px;
+  padding:14px 36px;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:1px;
+  background-color:#20b883;
+  color:#fff;
+  border:none;
+  outline:none;
+  cursor:pointer
+}
+
+.LoginPage_LoginForm{
+  width:100%;
+  max-width:500px;
+  border-radius:6px;
+  background-color:#fff;
+  margin:0 auto;
+  padding:32px;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  box-shadow:0 0 6px #ccc
+}
+
+.LoginPage_LoginForm h1{
+  letter-spacing:1px;
+  font-weight:500;
+  margin:0 0 24px
+}
+
+.LoginPage_InputField{
+  width:100%;
+  padding-top:16px;
+  font-size:14px;
+  box-sizing:border-box;
+  border:0;
+  border-bottom:2px solid #8c8c8c;
+  margin-bottom:16px;
+  outline:none
+}
+
+.LoginPage_Button{
+  display:inline-block;
+  border-radius:30px;
+  padding:14px 36px;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:1px;
+  background-color:#20b883;
+  color:#fff;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  margin-top:24px
+}
