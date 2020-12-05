@@ -1,66 +1,42 @@
-var card = document.querySelector('tbody')
-var oneMore1 = document.getElementById('text1')
-var oneMore2 = document.getElementById('text2')
-var oneMore3 = document.getElementById('text3')
-var oneMore4 = document.getElementById('text4')
-var oneMore5 = document.getElementById('text5')
-var oneMore6 = document.getElementById('text6')
-var trWrapper = document.getElementById('trWrapper')
+const trWrapper = document.getElementById("trWrapper");
+
+// ! products page
+$.get(
+  "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/products",
+  function (data, status) {
+    var newHtml;
+    data.map((item) => {
+      newHtml = `<tr class="ProductListingPage_TableRow ProductListingPage_ExpiredRow" id="trWrapper"><td class="ProductListingPage_SecondaryText" id="text1">${item.id}</td><td class="ProductListingPage_PrimaryText" id="text2">${item.medicineName}</td><td class="ProductListingPage_SecondaryText" id="text3">${item.medicineBrand}</td><td class="ProductListingPage_PrimaryText" id="text4">${item.expiryDate}</td><td class="ProductListingPage_SecondaryText" id="text5">$ ${item.unitPrice}</td><td class="ProductListingPage_SecondaryText" id="text6">${item.stock}</td></tr>`;
+      trWrapper.insertAdjacentHTML("beforeend", newHtml);
+    });
+  }
+);
+
+// ! orders page
+const ordersCard = document.querySelector(".Homepage_TableRow");
+$.get(
+  "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/orders",
+  function (data, status) {
+    var newHtml;
+    data.map((item) => {
+      newHtml = `
+    <tr class="Homepage_TableRow"><td class="Homepage_SecondaryText">${item.id}</td><td class="Homepage_PrimaryText">${item.customerName}</td><td class="Homepage_PrimaryText">${item.orderDate}<br /><span class="Homepage_SecondaryText">${item.orderTime}</span></td><td class="Homepage_SecondaryText">$ ${item.amount}</td><td class="Homepage_PrimaryText">${item.orderStatus}</td></tr>`;
+      ordersCard.insertAdjacentHTML("beforeend", newHtml);
+    });
+  }
+);
+
+// ! users page
+const usersCard = document.querySelector(".UserList_TableRow");
 
 $.get(
-    'https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/products',
-    function (data,status) { 
-        
-        console.log(data)
-        data.map((item)=>{
-          oneMore1.innerHTML = item.id
-        })
-        // for(var i=0; i< data.length; i++){
-        // var eleText1 = 
-        // var eleText2 = 
-        // var eleText3 = 
-        // var eleText4 = document.createTextNode(data[i].expiryDate)
-        // var eleText5 = 
-        // var eleText6 = 
-        //  oneMore1.innerHTML = data[i].id 
-        // oneMore1.appendChild(document.createTextNode(data[i].id))
-        // oneMore2.appendChild(document.createTextNode(data[i].medicineName))
-        // oneMore3.appendChild(document.createTextNode(data[i].medicineBrand))
-        // oneMore4.appendChild(document.createTextNode(data[i].expiryDate))
-        // oneMore5.appendChild(document.createTextNode("$ " + data[i].unitPrice))
-        // oneMore6.appendChild(document.createTextNode(data[i].stock))
-        // console.log(oneMore1)
-        //console.log(oneMore4)
-        //console.log(oneMore4.appendChild(eleText4))
-        //console.log(oneMore4)
-        
-        // var wrapperEle = document.createElement('tr')
-
-        // wrapperEle.appendChild(oneMore1)
-        // wrapperEle.appendChild(oneMore2)
-        // wrapperEle.appendChild(oneMore3)
-        // wrapperEle.appendChild(oneMore4)
-        // wrapperEle.appendChild(oneMore5)
-        // wrapperEle.appendChild(oneMore6)
-        // wrapperEle.classList.add('ProductListingPage_TableRow')  
-        // wrapperEle.classList.add('ProductListingPage_ExpiredRow')
-        
-        //trWrapper.appendChild(wrapperEle)
-        //console.log(wrapperEle)
-        //console.log(wrapperEle)
-
-
-        //card.appendChild
-    // }
-        
-     }
-  );
-
-//   <tr class="ProductListingPage_TableRow ProductListingPage_ExpiredRow">
-//                   <td class="ProductListingPage_SecondaryText">56104-020</td>
-//                   <td class="ProductListingPage_PrimaryText">Miconazole Nitrate</td>
-//                   <td class="ProductListingPage_SecondaryText">Premier Brands of America Inc.</td>
-//                   <td class="ProductListingPage_PrimaryText">14 Aug, 2012</td>
-//                   <td class="ProductListingPage_SecondaryText">$993.01</td>
-//                   <td class="ProductListingPage_SecondaryText">725</td>
-//                 </tr>
+  "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users",
+  function (data, status) {
+    // console.log(data);
+    var newHtml;
+    data.map((item) => {
+      newHtml = `<tr class="UserList_TableRow"><td class="UserList_SecondaryText">${item.id}</td><td class="UserList_PrimaryText"><img src=${item.profilePic} alt="Profile Pic"></td><td class="UserList_SecondaryText">${item.fullName}</td><td class="UserList_PrimaryText">${item.dob}</td><td class="UserList_SecondaryText__3UV5v">${item.gender}</td><td class="UserList_SecondaryText">${item.currentCity}, ${item.currentCountry}</td></tr>`;
+      usersCard.insertAdjacentHTML("beforeend", newHtml);
+    });
+  }
+);
