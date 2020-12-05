@@ -2,7 +2,7 @@ const credentials = document.querySelectorAll(".LoginPage_InputField");
 const submit = document.querySelector(".LoginPage_Button");
 submit.addEventListener("click", (ev) => {
   ev.preventDefault();
-  if (credentials[0].value == credentials[1].value) {
+  if (credentials[0].value === credentials[1].value) {
     const navItems = document.querySelectorAll(".Topbar_MenuItem");
     navItems[0].setAttribute("href", "./orders.html");
     navItems[1].setAttribute("href", "./products.html");
