@@ -1,4 +1,4 @@
-## This project is a simple implementation of a company's admin panel.
+## This project is an implementation of a company's admin panel.
 
 ### This project has vanilla JavaScript implementation of :
 
@@ -8,3 +8,4 @@
 4. JavaScript Date()
 5. DOM Manipulation
 6. ES6+ syntax
+
