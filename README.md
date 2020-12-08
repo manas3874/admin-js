@@ -9,3 +9,4 @@
 5. DOM Manipulation
 6. ES6+ syntax
 
+> This project had a pre-written document (HTML + CSS) for which functionality is added with vanilla JavaScript.
