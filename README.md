@@ -1,6 +1,6 @@
 ## This is an implementation of a company's admin panel.
 
-> This project had a pre-written document (HTML + CSS) for which functionality is added with vanilla JavaScript.
+> [View the application live](https://kind-swartz-a32b4c.netlify.app)
 
 ### Vanilla JavaScript implementation of :
 
