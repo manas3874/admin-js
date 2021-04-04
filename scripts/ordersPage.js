@@ -4,6 +4,7 @@
 const ordersCard = document.querySelector(".Homepage_TableRow");
 const checkboxes = document.querySelectorAll(".Homepage_FilterCheckbox input");
 const orderCounter = document.querySelector(".filterCount");
+// ! To render the orders depending upon the filter applied
 const ordersRenderer = (activeOrderFilters) => {
   $.get(
     "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/orders",
@@ -24,6 +25,7 @@ const ordersRenderer = (activeOrderFilters) => {
   );
 };
 
+// ! Updating the filter state as per the checked checkboxes
 var arr = new Array(checkboxes);
 arr = arr[0];
 var activeOrderFilters = { New: 1, Packed: 1, InTransit: 1, Delivered: 1 };

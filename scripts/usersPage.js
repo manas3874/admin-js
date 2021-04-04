@@ -7,6 +7,7 @@ const searchButton = document.querySelector(".UserList_Button");
 searchButton.addEventListener("click", () => {
   searchInput.value = "";
 });
+// ! Function to render users based on the search terms/string
 usersRenderer = (searchString) => {
   $.get(
     "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users",
@@ -27,6 +28,7 @@ usersRenderer = (searchString) => {
     }
   );
 };
+// ! Initial render
 usersRenderer("");
 window.addEventListener("keyup", (ev) => {
   ev.preventDefault();

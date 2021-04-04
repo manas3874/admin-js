@@ -21,7 +21,7 @@ var arrayOfMonths = [
   "Nov",
   "Dec",
 ];
-
+// ! To render the products depending upon the filter applied
 const productsRenderer = (activeProductFilters) => {
   $.get(
     "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/products",
@@ -133,14 +133,14 @@ const productsRenderer = (activeProductFilters) => {
     }
   );
 };
+// ! initial render
 productsRenderer(activeProductFilters);
 var arr = new Array(productFilterCheckboxes);
 arr = arr[0];
 
+// ! Updating the filters
 for (let item of arr) {
-  // console.log(item);
   item.addEventListener("change", (ev) => {
-    // console.log(ev.target.checked);
     console.log(ev.checked);
     if (ev.target.checked) {
       if (!(ev.target.value in activeProductFilters)) {
